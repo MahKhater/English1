@@ -3,7 +3,28 @@ from flask import Flask, render_template_string, request, redirect, url_for, ses
 
 app = Flask(__name__)
 app.secret_key = 'ser_el_tafouk_secret_key' # مفتاح الجلسة لتخزين الأسئلة والإجابات
+def check_user_answer(user_answer, correct_answer):
+    """
+    دالة موحدة للتحقق من صحة الإجابة بغض النظر عن كونها True/False أو اختيار من متعدد
+    تقوم بتوحيد الصيغة (Lower case وتنزع المسافات الزائدة) لتجنب أخطاء المطابقة.
+    """
+    # إذا كانت الإجابة أسئلة صواب وخطأ (True/False)
+    if isinstance(correct_answer, bool) or str(correct_answer).lower() in ['true', 'false']:
+        # توحيد إجابة المستخدم والإجابة الصحيحة إلى صيغة نصية بحروف صغيرة
+        if isinstance(user_answer, bool):
+            user_str = str(user_answer).lower()
+        else:
+            user_str = str(user_answer).strip().lower()
+            
+        correct_str = str(correct_answer).strip().lower()
+        return user_str == correct_str
 
+    # إذا كانت أسئلة اختيار من متعدد (MCQ)
+    else:
+        # مقارنة النص بعد إزالة المسافات الزائدة وتوحيد الحروف الكبيرة والصغيرة
+        user_str = str(user_answer).strip().lower()
+        correct_str = str(correct_answer).strip().lower()
+        return user_str == correct_str
 QUESTIONS_DB = {
 
     "مبتدئ": [
