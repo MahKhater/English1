@@ -2255,13 +2255,22 @@ QUIZ_TEMPLATE = """
                 <span class="badge-type">اختيار من متعدد</span>
                 <p><strong>سؤال {{ current_num }}:</strong> {{ question.prompt }}</p>
                
-                <div class="options-list">
-                    {% for opt in question.options %}
-                        <label class="option-item">
-                            <input type="radio" name="current_answer" value="{{ opt }}" required> {{ opt }}
-                        </label>
-                    {% endfor %}
-                </div>
+<div class="options-list">
+    {% if question.options %}
+        {% for opt in question.options %}
+        <label class="option-item">
+            <input type="radio" name="current_answer" value="{{ opt }}" required> {{ opt }}
+        </label>
+        {% endfor %}
+    {% else %}
+        <label class="option-item">
+            <input type="radio" name="current_answer" value="True" required> True (صح)
+        </label>
+        <label class="option-item">
+            <input type="radio" name="current_answer" value="False" required> False (خطأ)
+        </label>
+    {% endif %}
+</div>
                 <div class="hint">💡 <em>{{ question.hint }}</em></div>
             </div>
            
