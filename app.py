@@ -809,13 +809,6 @@ QUESTIONS_DB = {
             "answer": "a) expand"
         },
         {
-            "id": 16,
-            "type": "mcq",
-            "prompt": "Surviving the harsh desert climate requires innovative irrigation techniques and careful resource .... .",
-            "options": ["a) management", "b) waste", "c) neglect", "d) depletion"],
-            "answer": "a) management"
-        },
-        {
             "id": 17,
             "type": "mcq",
             "prompt": "The keynote speaker managed to .... the audience's deep interest by sharing groundbreaking research data.",
@@ -961,13 +954,6 @@ QUESTIONS_DB = {
             "prompt": "The heavy downpour during the night caused temporary transport disruptions across several .... regions.",
             "options": ["a) rural", "b) urban", "c) industrial", "d) metropolitan"],
             "answer": "a) rural"
-        },
-        {
-            "id": 38,
-            "type": "mcq",
-            "prompt": "To double output efficiency, the factory floor underwent complete re-engineering and automation .... .",
-            "options": ["a) upgrades", "b) regressions", "c) limitations", "d) reductions"],
-            "answer": "a) upgrades"
         },
         {
             "id": 39,
@@ -1406,20 +1392,6 @@ QUESTIONS_DB = {
     ],
        "محترف": [
             { 
-            "id": 1,
-            "type": "mcq",
-            "prompt": "The government allocated a massive budget for the .... of rural villages to improve living standards.",
-            "options": ["a) modernization", "b) isolation", "c) termination", "d) reduction"],
-            "answer": "a) modernization"
-        },
-        {
-            "id": 2,
-            "type": "mcq",
-            "prompt": "Successful business leaders know how to .... strategic partnerships with international companies.",
-            "options": ["a) forge", "b) waste", "c) neglect", "d) abandon"],
-            "answer": "a) forge"
-        },
-        {
             "id": 3,
             "type": "mcq",
             "prompt": "The newly launched economic .... aims to support small enterprises and boost local production.",
@@ -1427,25 +1399,11 @@ QUESTIONS_DB = {
             "answer": "b) venture"
         },
         {
-            "id": 4,
-            "type": "mcq",
-            "prompt": "Water scarcity requires farmers to adopt .... irrigation techniques to conserve every single drop.",
-            "options": ["a) wasteful", "b) efficient", "c) random", "d) traditional"],
-            "answer": "b) efficient"
-        },
-        {
             "id": 5,
             "type": "mcq",
             "prompt": "To remain competitive in the global market, the factory must upgrade its outdated .... .",
             "options": ["a) machinery", "b) decoration", "c) furniture", "d) stationery"],
             "answer": "a) machinery"
-        },
-        {
-            "id": 6,
-            "type": "mcq",
-            "prompt": "The annual economic report showed a steady .... in the country's export rates.",
-            "options": ["a) decline", "b) drop", "c) surge", "d) fall"],
-            "answer": "c) surge"
         },
         {
             "id": 7,
@@ -2002,42 +1960,13 @@ QUESTIONS_DB = {
             "type": "tf",
             "prompt": "Operational efficiency guarantees that manufacturing companies waste minimal resources while maximizing output quality.",
             "answer": True
-        },
-        {
-            "id": 92,
-            "type": "tf",
-            "prompt": "Human capital investment focuses on improving workforce skills through specialized training and education programs.",
-            "answer": True
-        },
-        {
-            "id": 93,
-            "type": "tf",
-            "prompt": "Macroeconomic indicators such as inflation rates directly influence consumer spending habits and market stability.",
-            "answer": True
-        },
-        {
-            "id": 94,
-            "type": "tf",
-            "prompt": "Supply chain disruptions can severely paralyze international manufacturing networks and delay product delivery.",
-            "answer": True
-        },
-        {
-            "id": 95,
-            "type": "tf",
-            "prompt": "Environmental regulations compel industrial factories to reduce carbon footprints and adopt green technologies.",
-            "answer": True
+        
         },
         {
             "id": 96,
             "type": "tf",
             "prompt": "Strategic planning enables corporate executives to anticipate future market shifts and allocate resources efficiently.",
             "answer": True
-        },
-        {
-            "id": 97,
-            "type": "tf",
-            "prompt": "Economic globalization isolates domestic markets completely from international trade fluctuations and foreign competition.",
-            "answer": False
         },
         {
             "id": 98,
